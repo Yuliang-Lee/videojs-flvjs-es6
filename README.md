@@ -1,4 +1,4 @@
-# videojs-flvjs
+# videojs-flvjs-es6
 
 Refactor [videojs-flvjs](https://github.com/mister-ben/videojs-flvjs) for compatitable with ES6 module.
 
