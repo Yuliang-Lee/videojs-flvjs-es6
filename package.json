@@ -1,0 +1,81 @@
+{
+  "name": "videojs-flvjs-es6",
+  "version": "1.0.0",
+  "description": "Video.js tech for FLV playback in MSE with flv.js use in es6 modules",
+  "main": "src/plugin.js",
+  "generator-videojs-plugin": {
+    "version": "2.2.0"
+  },
+  "scripts": {
+    "build:js:babel": "babel src -d dist",
+    "lint": "vjsstandard",
+    "pretest": "npm-run-all lint build",
+    "preversion": "npm test",
+    "prepush": "npm run lint"
+  },
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ],
+  "author": "xlaoyu <frank_yll@163.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yuliang-Lee/videojs-flvjs-es6.git"
+  },
+  "bugs": "https://github.com/Yuliang-Lee/videojs-flvjs-es6/issues",
+  "license": "Apache-2.0",
+  "browserify": {
+    "transform": [
+      "browserify-versionify"
+    ]
+  },
+  "browserify-shim": {
+    "qunit": "global:QUnit",
+    "sinon": "global:sinon",
+    "video.js": "global:videojs"
+  },
+  "style": "dist/videojs-flvjs.css",
+  "videojs-plugin": {
+    "style": "dist/videojs-flvjs.css",
+    "script": "dist/videojs-flvjs.min.js"
+  },
+  "vjsstandard": {
+    "ignore": [
+      "dist",
+      "docs",
+      "test/dist",
+      "test/karma.conf.js"
+    ]
+  },
+  "files": [
+    "src/",
+    "index.html"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "glob": "^6.0.3",
+    "global": "^4.3.0",
+    "husky": "^0.14.3",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-detect-browsers": "^2.0.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-qunit": "^0.1.9",
+    "karma-safari-launcher": "^0.1.1",
+    "lodash": "^4.11.2",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^1.5.1",
+    "qunitjs": "^1.21.0",
+    "rimraf": "^2.5.1",
+    "semver": "^5.3.0",
+    "sinon": "~1.14.0",
+    "uglify-js": "^2.6.1"
+  }
+}
