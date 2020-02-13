@@ -5,7 +5,7 @@ Refactor [videojs-flvjs](https://github.com/mister-ben/videojs-flvjs) for compat
 ## Installation
 
 ```sh
-npm install --save video.js flv.js videojs-flvjs
+npm install --save video.js flv.js videojs-flvjs-es6
 ```
 
 ## Usage
